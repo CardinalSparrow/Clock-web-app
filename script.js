@@ -12,10 +12,10 @@ function moveHands() {
     minuteHand.style.transform = `rotate(${minutes}deg)`;
     hourHand.style.transform = `rotate(${hours}deg)`;
 
-    // if (currentTime.getSeconds() === 0,15,30,45) {
-    //   const tickSound = document.getElementById("tickSound");
-    //   tickSound.play();
-    // }
+    if (currentTime.getSeconds() === 0,15,30,45) {
+      const tickSound = document.getElementById("tickSound");
+      tickSound.play();
+    }
 }
 
 setInterval(moveHands, 1000);
